@@ -8,22 +8,18 @@
 
 import UIKit
 
-class Question: UITableViewCell {
-
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var imgView: UIImageView!
+class Questions: Codable {
+    let items: [Question]
     
+    init(items: [Question]) {
+        self.items = items
+    }
+}
+
+class Question: Codable {
+    let title: String
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    init (title: String) {
+        self.title = title
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

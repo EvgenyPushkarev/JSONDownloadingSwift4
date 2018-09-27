@@ -14,7 +14,8 @@
 		1F0C3FC72155538100F3438E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0C3FC52155538100F3438E /* LaunchScreen.storyboard */; };
 		1F0C3FD22155538300F3438E /* JSONDownloadingSwift4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C3FD12155538300F3438E /* JSONDownloadingSwift4Tests.swift */; };
 		1F0C3FDD2155538300F3438E /* JSONDownloadingSwift4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C3FDC2155538300F3438E /* JSONDownloadingSwift4UITests.swift */; };
-		1FD75CF3215C273F00E784F5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD75CF2215C273F00E784F5 /* Question.swift */; };
+		1FD75CF3215C273F00E784F5 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD75CF2215C273F00E784F5 /* QuestionCell.swift */; };
+		1FE32707215C401200E8AC77 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE32706215C401200E8AC77 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		1F0C3FD82155538300F3438E /* JSONDownloadingSwift4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONDownloadingSwift4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0C3FDC2155538300F3438E /* JSONDownloadingSwift4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloadingSwift4UITests.swift; sourceTree = "<group>"; };
 		1F0C3FDE2155538400F3438E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FD75CF2215C273F00E784F5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		1FD75CF2215C273F00E784F5 /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		1FE32706215C401200E8AC77 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 			children = (
 				1F0C3FBC2155537700F3438E /* AppDelegate.swift */,
 				1F0C3FBE2155537700F3438E /* ViewController.swift */,
-				1FD75CF2215C273F00E784F5 /* Question.swift */,
+				1FD75CF2215C273F00E784F5 /* QuestionCell.swift */,
+				1FE32706215C401200E8AC77 /* Question.swift */,
 				1F0C3FC02155537700F3438E /* Main.storyboard */,
 				1F0C3FC32155538100F3438E /* Assets.xcassets */,
 				1F0C3FC52155538100F3438E /* LaunchScreen.storyboard */,
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD75CF3215C273F00E784F5 /* Question.swift in Sources */,
+				1FD75CF3215C273F00E784F5 /* QuestionCell.swift in Sources */,
+				1FE32707215C401200E8AC77 /* Question.swift in Sources */,
 				1F0C3FBF2155537700F3438E /* ViewController.swift in Sources */,
 				1F0C3FBD2155537700F3438E /* AppDelegate.swift in Sources */,
 			);
