@@ -32,7 +32,9 @@ class ViewController: UIViewController, UITableViewDataSource {
                 let decoder = JSONDecoder()
                 let downloadedQuestions = try decoder.decode(Questions.self, from: data)
                 self.questions = downloadedQuestions.items
-                self.tableView.reloadData()
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } catch {
                 print("something's wrong after downloading")
             }
