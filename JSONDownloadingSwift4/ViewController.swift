@@ -43,7 +43,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         }.resume()
     }
-    extension ViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questions.count
     }
@@ -54,7 +53,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.titleLabel.text = questions[indexPath.row].title
         return cell
         
-    }
     }
 }
 
