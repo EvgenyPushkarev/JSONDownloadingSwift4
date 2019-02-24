@@ -18,49 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYc-GO-5Km">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M70-U2-yuz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" rowHeight="105" id="Dph-iw-b29" customClass="QuestionCell" customModule="JSONDownloadingSwift4" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="105"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dph-iw-b29" id="5h8-d6-WCd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnk-B8-bNT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Tnk-B8-bNT" firstAttribute="leading" secondItem="5h8-d6-WCd" secondAttribute="leading" id="DKF-pX-EA1"/>
-                                                <constraint firstAttribute="trailing" secondItem="Tnk-B8-bNT" secondAttribute="trailing" id="bQr-5t-cub"/>
-                                                <constraint firstAttribute="bottom" secondItem="Tnk-B8-bNT" secondAttribute="bottom" constant="-0.5" id="ebA-Id-ja7"/>
-                                                <constraint firstItem="Tnk-B8-bNT" firstAttribute="top" secondItem="5h8-d6-WCd" secondAttribute="top" id="thk-OV-TkN"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="titleLabel" destination="Tnk-B8-bNT" id="G2c-cG-nr7"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EYc-GO-5Km" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6x5-Cs-sw8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EYc-GO-5Km" secondAttribute="bottom" id="QK7-Gb-fml"/>
-                            <constraint firstItem="EYc-GO-5Km" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" placeholder="YES" id="izy-Ee-mHm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EYc-GO-5Km" secondAttribute="trailing" id="unh-c7-UTC"/>
+                            <constraint firstItem="M70-U2-yuz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GBF-4O-QF8"/>
+                            <constraint firstItem="M70-U2-yuz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eGQ-ZD-oUY"/>
+                            <constraint firstItem="M70-U2-yuz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fbq-3c-4uw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M70-U2-yuz" secondAttribute="bottom" id="tI8-uY-oxf"/>
+                            <constraint firstItem="M70-U2-yuz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vGl-Ox-5HW"/>
+                            <constraint firstItem="M70-U2-yuz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zkp-0h-RPv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="EYc-GO-5Km" id="WHz-la-gum"/>
+                        <outlet property="tableView" destination="M70-U2-yuz" id="Jab-Ml-a3v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

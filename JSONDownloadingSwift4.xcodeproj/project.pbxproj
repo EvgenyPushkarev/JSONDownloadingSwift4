@@ -16,6 +16,7 @@
 		1F0C3FDD2155538300F3438E /* JSONDownloadingSwift4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C3FDC2155538300F3438E /* JSONDownloadingSwift4UITests.swift */; };
 		1FD75CF3215C273F00E784F5 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD75CF2215C273F00E784F5 /* QuestionCell.swift */; };
 		1FE32707215C401200E8AC77 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE32706215C401200E8AC77 /* Question.swift */; };
+		1FF07A03221207BF009F5797 /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FF07A02221207BF009F5797 /* QuestionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1F0C3FDE2155538400F3438E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FD75CF2215C273F00E784F5 /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 		1FE32706215C401200E8AC77 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		1FF07A02221207BF009F5797 /* QuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				1F0C3FC32155538100F3438E /* Assets.xcassets */,
 				1F0C3FC52155538100F3438E /* LaunchScreen.storyboard */,
 				1F0C3FC82155538100F3438E /* Info.plist */,
+				1FF07A02221207BF009F5797 /* QuestionCell.xib */,
 			);
 			path = JSONDownloadingSwift4;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F0C3FC72155538100F3438E /* LaunchScreen.storyboard in Resources */,
+				1FF07A03221207BF009F5797 /* QuestionCell.xib in Resources */,
 				1F0C3FC42155538100F3438E /* Assets.xcassets in Resources */,
 				1F0C3FC22155537700F3438E /* Main.storyboard in Resources */,
 			);

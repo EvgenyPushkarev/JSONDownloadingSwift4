@@ -11,13 +11,15 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     final let url = URL(string: "http://api.stackexchange.com/2.2/questions?order=desc&sort=activity&tagged=ios&site=stackoverflow")
     private var questions = [Question]()
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.register(UINib.init(nibName: "QuestionCell", bundle: Bundle.main),
+            forCellReuseIdentifier: "QuestionCell")
         downloadJson()
     }
 
@@ -43,11 +45,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         }.resume()
     }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        debugPrint("cellforrow")
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionCell") as? QuestionCell else { return UITableViewCell() }
         
         cell.titleLabel.text = questions[indexPath.row].title
