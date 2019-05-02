@@ -18,8 +18,25 @@ class Questions: Codable {
 
 class Question: Codable {
     let title: String
+    let owner: Ownerr
+    let last_edit_date: Int
+    let answer_count: Int
     
-    init (title: String) {
+    init (title: String, owner: Ownerr, last_edit_date: Int, answer_count: Int) {
         self.title = title
+        self.owner = owner
+        self.last_edit_date = last_edit_date
+        self.answer_count = answer_count
     }
 }
+
+class Ownerr: Codable {
+    let profile_image: String
+    let display_name: String
+    
+    init (profile_image: String, display_name: String) {
+        self.profile_image = profile_image
+        self.display_name = display_name
+    }
+}
+	

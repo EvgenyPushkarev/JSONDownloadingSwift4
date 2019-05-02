@@ -12,6 +12,13 @@ class QuestionCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
         
+    @IBOutlet var imgView: UIImageView!
+    
+    @IBOutlet var AuthName: UILabel!
+    
+    @IBOutlet var DateModi: UILabel!
+    
+    @IBOutlet var AnsNumb: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

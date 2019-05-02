@@ -58,8 +58,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionCell") as? QuestionCell else { return UITableViewCell() }
         
         cell.titleLabel.text = questions[indexPath.row].title
-        return cell
+        cell.AuthName.text = questions[indexPath.row].owner.display_name
+        cell.AnsNumb.text = "\(questions[indexPath.row].answer_count)"
+        cell.DateModi.text = "\(questions[indexPath.row].last_edit_date)"
+        NSLog("Last Edit --- %d", questions[indexPath.row].last_edit_date);
         
+        if let imageURL = URL(string: questions[indexPath.row].owner.profile_image) {
+            let data = try? Data(contentsOf: imageURL)
+            if let data = data {
+                let image = UIImage(data: data)
+                cell.imgView.image = image
+            }
+        }
+                return cell
     }
 }
 
